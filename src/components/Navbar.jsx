@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/logoFORTCAMP.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -39,7 +40,7 @@ const Navbar = () => {
         }}>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <a href="#" className="logo">
-                    <img src="/logoFORTCAMP.png" alt="FORTCAMP Corretora de Seguros" style={{ height: '100px', width: 'auto' }} />
+                    <img src={logo} alt="FORTCAMP Corretora de Seguros" style={{ height: '100px', width: 'auto' }} />
                 </a>
 
                 {/* Desktop Menu */}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import robertoFoto from '../assets/ROBERTO_CAPORALLE_FOTO.jpg';
 
 const About = () => {
     return (
@@ -43,7 +44,7 @@ const About = () => {
                             boxShadow: '0 0 30px rgba(100, 255, 218, 0.15)'
                         }}>
                             <img
-                                src="/ROBERTO_CAPORALLE_FOTO.jpg"
+                                src={robertoFoto}
                                 alt="Roberto Caporalle"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             />
