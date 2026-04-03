@@ -3,41 +3,61 @@ import { Instagram, Linkedin, Facebook } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="bg-secondary pt-16 pb-8 border-t border-[rgba(100,255,218,0.1)]">
-            <div className="container mx-auto px-6">
-                <div className="flex flex-col md:flex-row justify-between flex-wrap gap-12 mb-12">
-
-                    <div className="flex-1 min-w-[300px]">
-                        <a href="#" className="text-2xl font-bold text-white block mb-4">
-                            FORT<span className="text-accent">CAMP</span>
+        <footer style={{
+            background: 'var(--secondary)',
+            paddingTop: '4rem',
+            paddingBottom: '2rem',
+            borderTop: '1px solid rgba(100,255,218,0.1)',
+        }}>
+            <div className="container">
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    flexWrap: 'wrap',
+                    gap: '3rem',
+                    marginBottom: '3rem',
+                }}>
+                    <div style={{ flex: '1 1 300px', minWidth: '250px' }}>
+                        <a href="#home" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--white)', display: 'block', marginBottom: '1rem' }}>
+                            FORT<span style={{ color: 'var(--accent)' }}>CAMP</span>
                         </a>
-                        <p className="text-text-muted leading-relaxed">
-                            Protegendo o que realmente importa com transparência,<br /> responsabilidade e compromisso.
+                        <p style={{ color: 'var(--text-muted)', lineHeight: '1.7' }}>
+                            Protegendo o que realmente importa com transparência, responsabilidade e compromisso.
                         </p>
                     </div>
 
-                    <div className="flex-1 min-w-[150px]">
-                        <h4 className="text-white mb-6 text-lg font-semibold">Links Rápidos</h4>
-                        <ul className="flex flex-col gap-3">
-                            <li><a href="#home" className="text-text-muted hover:text-accent transition-colors">Início</a></li>
-                            <li><a href="#about" className="text-text-muted hover:text-accent transition-colors">Sobre</a></li>
-                            <li><a href="#services" className="text-text-muted hover:text-accent transition-colors">Seguros</a></li>
-                            <li><a href="#contact" className="text-text-muted hover:text-accent transition-colors">Contato</a></li>
+                    <div style={{ flex: '0 1 150px' }}>
+                        <h4 style={{ color: 'var(--white)', marginBottom: '1.5rem', fontSize: '1.1rem', fontWeight: '600' }}>
+                            Links Rápidos
+                        </h4>
+                        <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                            <li><a href="#home" style={{ color: 'var(--text-muted)' }}>Início</a></li>
+                            <li><a href="#about" style={{ color: 'var(--text-muted)' }}>Sobre</a></li>
+                            <li><a href="#services" style={{ color: 'var(--text-muted)' }}>Seguros</a></li>
+                            <li><a href="#broker" style={{ color: 'var(--text-muted)' }}>Corretor</a></li>
+                            <li><a href="#contact" style={{ color: 'var(--text-muted)' }}>Contato</a></li>
                         </ul>
                     </div>
 
-                    <div className="flex-1 min-w-[150px]">
-                        <h4 className="text-white mb-6 text-lg font-semibold">Social</h4>
-                        <div className="flex gap-4">
-                            <a href="#" className="text-text-muted hover:text-accent transition-colors"><Instagram size={20} /></a>
-                            <a href="#" className="text-text-muted hover:text-accent transition-colors"><Linkedin size={20} /></a>
-                            <a href="#" className="text-text-muted hover:text-accent transition-colors"><Facebook size={20} /></a>
+                    <div style={{ flex: '0 1 150px' }}>
+                        <h4 style={{ color: 'var(--white)', marginBottom: '1.5rem', fontSize: '1.1rem', fontWeight: '600' }}>
+                            Social
+                        </h4>
+                        <div style={{ display: 'flex', gap: '1rem' }}>
+                            <a href="#" style={{ color: 'var(--text-muted)' }}><Instagram size={20} /></a>
+                            <a href="#" style={{ color: 'var(--text-muted)' }}><Linkedin size={20} /></a>
+                            <a href="#" style={{ color: 'var(--text-muted)' }}><Facebook size={20} /></a>
                         </div>
                     </div>
-
                 </div>
 
-                <div className="text-center pt-8 border-t border-white/5 text-text-muted text-sm">
+                <div style={{
+                    textAlign: 'center',
+                    paddingTop: '2rem',
+                    borderTop: '1px solid rgba(255,255,255,0.05)',
+                    color: 'var(--text-muted)',
+                    fontSize: '0.85rem',
+                }}>
                     <p>&copy; {new Date().getFullYear()} FORTCAMP Corretora de Seguros. Todos os direitos reservados.</p>
                 </div>
             </div>

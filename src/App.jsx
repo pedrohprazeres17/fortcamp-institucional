@@ -1,9 +1,11 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import About from './components/About';
+import AboutCompany from './components/AboutCompany';
 import Services from './components/Services';
-import Contact from './components/Contact';
+import Broker from './components/Broker';
+import CallToAction from './components/CallToAction';
+import Values from './components/Values';
 import Footer from './components/Footer';
 
 function App() {
@@ -11,9 +13,16 @@ function App() {
         <div className="app">
             <Navbar />
             <Hero />
-            <About />
+            <div className="section-divider" />
+            <AboutCompany />
+            <div className="section-divider" />
             <Services />
-            <Contact />
+            <div className="section-divider" />
+            <Broker />
+            <div className="section-divider" />
+            <CallToAction />
+            <div className="section-divider" />
+            <Values />
             <Footer />
         </div>
     );

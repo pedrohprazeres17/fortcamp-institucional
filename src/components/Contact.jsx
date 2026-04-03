@@ -27,7 +27,7 @@ const Contact = () => {
                         Estamos prontos para entender suas necessidades e oferecer a melhor solução. Fale com um de nossos especialistas hoje mesmo.
                     </p>
 
-                    <a href="#" className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '1rem 2.5rem', fontSize: '1.1rem' }}>
+                    <a href="https://wa.me/5519997452558" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                         Entrar em Contato <ArrowRight size={20} />
                     </a>
                 </motion.div>
