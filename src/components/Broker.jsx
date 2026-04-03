@@ -44,7 +44,7 @@ const Broker = () => {
                         }}>
                             <img
                                 src={robertoFoto}
-                                alt="Roberto Caporalle"
+                                alt="Roberto Caporalle Mayo"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             />
                         </div>
@@ -53,7 +53,7 @@ const Broker = () => {
                     {/* Bio resumida */}
                     <div style={{ flex: 1, minWidth: '300px', maxWidth: '600px' }}>
                         <h3 style={{ fontSize: '1.4rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>
-                            Roberto Caporalle
+                            Roberto Caporalle Mayo
                         </h3>
                         <div style={{ fontSize: '1rem', color: 'var(--text-muted)', lineHeight: '1.9' }}>
                             <p style={{ marginBottom: '1rem' }}>

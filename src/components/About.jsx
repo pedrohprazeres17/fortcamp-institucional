@@ -45,7 +45,7 @@ const About = () => {
                         }}>
                             <img
                                 src={robertoFoto}
-                                alt="Roberto Caporalle"
+                                alt="Roberto Caporalle Mayo"
                                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                             />
                         </div>
@@ -57,7 +57,7 @@ const About = () => {
                             Conhecendo seu Corretor
                         </h3>
                         <h4 style={{ fontSize: '1.1rem', color: 'var(--white)', marginBottom: '1.5rem', fontWeight: '400' }}>
-                            Roberto Caporalle
+                            Roberto Caporalle Mayo
                         </h4>
                         <div style={{ fontSize: '1rem', color: 'var(--text-muted)', lineHeight: '1.8' }}>
                             <p style={{ marginBottom: '1rem' }}>

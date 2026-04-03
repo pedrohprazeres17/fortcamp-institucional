@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Car, Home, Heart, Briefcase, Plus } from 'lucide-react';
+import { Car, Home, Heart, Briefcase, Smartphone, Monitor } from 'lucide-react';
 
 const services = [
     { icon: <Car size={32} />, title: 'Seguro Auto', desc: 'Veículo protegido contra roubos, colisões e terceiros.' },
     { icon: <Home size={32} />, title: 'Seguro Residencial', desc: 'Sua casa segura contra incêndios e danos.' },
     { icon: <Heart size={32} />, title: 'Seguro de Vida', desc: 'Tranquilidade financeira para sua família.' },
     { icon: <Briefcase size={32} />, title: 'Seguro Empresarial', desc: 'Proteção completa para seu negócio.' },
-    { icon: <Plus size={32} />, title: 'Outros Seguros', desc: 'Viagem, equipamentos e muito mais.' },
+    { icon: <Smartphone size={32} />, title: 'Seguro Celular', desc: 'Proteção contra roubo, furto e danos ao seu smartphone.' },
+    { icon: <Monitor size={32} />, title: 'Seguro Eletrônicos', desc: 'Cobertura para notebooks, tablets e outros dispositivos.' },
 ];
 
 const Services = () => {
@@ -27,7 +28,7 @@ const Services = () => {
 
                 <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
                     gap: '1.5rem',
                 }}>
                     {services.map((service, index) => (
