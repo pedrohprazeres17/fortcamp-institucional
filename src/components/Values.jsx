@@ -27,7 +27,7 @@ const Values = () => {
                     viewport={{ once: true }}
                     style={{ textAlign: 'center', marginBottom: '4rem' }}
                 >
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--white)' }}>
+                    <h2 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.5rem)', marginBottom: '1rem', color: 'var(--white)' }}>
                         Nossos <span style={{ color: 'var(--accent)' }}>Princípios</span>
                     </h2>
                     <div style={{ width: '60px', height: '4px', background: 'var(--accent)', margin: '0 auto' }}></div>

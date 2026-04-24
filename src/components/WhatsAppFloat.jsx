@@ -8,7 +8,7 @@ const WhatsAppFloat = () => {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <div style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}>
+        <div className="wa-float-wrap" style={{ position: 'fixed', bottom: '2rem', right: '2rem', zIndex: 9999 }}>
             <AnimatePresence>
                 {hovered && (
                     <motion.div

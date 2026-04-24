@@ -241,6 +241,44 @@ ul {
     }
 }
 
+/* ─── Container extra-tight em telas muito pequenas ── */
+@media (max-width: 380px) {
+    .container {
+        padding: 0 16px;
+    }
+}
+
+/* ─── Foto do corretor ───────────────────────────── */
+.broker-photo {
+    width: 200px;
+    height: 200px;
+}
+
+@media (max-width: 600px) {
+    .broker-photo {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* ─── Feedback tátil em touch ────────────────────── */
+.btn-cta:active {
+    transform: scale(0.97) translateY(0);
+    box-shadow: 0 2px 12px rgba(249, 115, 22, 0.3);
+}
+
+.service-cta:active {
+    opacity: 0.65;
+}
+
+/* ─── WhatsApp float menor em mobile ─────────────── */
+@media (max-width: 480px) {
+    .wa-float-wrap {
+        bottom: 1.25rem;
+        right: 1.25rem;
+    }
+}
+
 /* ─── WhatsApp Float ─────────────────────────── */
 .wa-pulse {
     position: absolute;

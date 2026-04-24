@@ -58,7 +58,7 @@ const Hero = () => {
 
                     <p style={{
                         maxWidth: '500px',
-                        fontSize: '1rem',
+                        fontSize: 'clamp(0.9rem, 2.5vw, 1rem)',
                         color: 'var(--text-muted)',
                         lineHeight: '1.7',
                     }}>

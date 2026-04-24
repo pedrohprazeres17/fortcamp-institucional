@@ -13,7 +13,7 @@ const Broker = () => {
                     viewport={{ once: true }}
                     style={{ textAlign: 'center', marginBottom: '4rem' }}
                 >
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--white)' }}>
+                    <h2 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.5rem)', marginBottom: '1rem', color: 'var(--white)' }}>
                         Conheça seu <span style={{ color: 'var(--accent)' }}>Corretor</span>
                     </h2>
                     <div style={{ width: '60px', height: '4px', background: 'var(--accent)', margin: '0 auto' }}></div>
@@ -34,9 +34,7 @@ const Broker = () => {
                 >
                     {/* Foto */}
                     <div style={{ flex: '0 0 auto' }}>
-                        <div style={{
-                            width: '240px',
-                            height: '240px',
+                        <div className="broker-photo" style={{
                             borderRadius: '50%',
                             overflow: 'hidden',
                             border: '4px solid var(--accent)',
@@ -51,11 +49,11 @@ const Broker = () => {
                     </div>
 
                     {/* Bio resumida */}
-                    <div style={{ flex: 1, minWidth: '300px', maxWidth: '600px' }}>
+                    <div style={{ flex: 1, minWidth: 'min(300px, 100%)', maxWidth: '600px' }}>
                         <h3 style={{ fontSize: '1.4rem', color: 'var(--accent)', marginBottom: '0.5rem' }}>
                             Roberto Caporalle Mayo
                         </h3>
-                        <div style={{ fontSize: '1rem', color: 'var(--text-muted)', lineHeight: '1.9' }}>
+                        <div style={{ fontSize: 'clamp(0.9rem, 2.5vw, 1rem)', color: 'var(--text-muted)', lineHeight: '1.9' }}>
                             <p style={{ marginBottom: '1rem' }}>
                                 Com mais de duas décadas de experiência no mercado segurador, Roberto construiu sua carreira
                                 em posições estratégicas nas áreas comercial, gestão e desenvolvimento de negócios. Formado em

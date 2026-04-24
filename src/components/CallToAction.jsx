@@ -13,7 +13,7 @@ const CallToAction = () => {
                     viewport={{ once: true }}
                     style={{
                         textAlign: 'center',
-                        padding: '5rem 2rem',
+                        padding: 'clamp(2.5rem, 8vw, 5rem) clamp(1.25rem, 5vw, 3rem)',
                         borderRadius: '16px',
                         background: 'linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%)',
                         border: '1px solid var(--glass-border)',
@@ -36,7 +36,7 @@ const CallToAction = () => {
 
                     <h2 style={{
                         marginBottom: '1.5rem',
-                        fontSize: '2.2rem',
+                        fontSize: 'clamp(1.4rem, 3.5vw, 2.2rem)',
                         color: 'var(--white)',
                         position: 'relative',
                     }}>
@@ -49,7 +49,7 @@ const CallToAction = () => {
                         marginBottom: '2.5rem',
                         maxWidth: '550px',
                         margin: '0 auto 2.5rem',
-                        fontSize: '1.1rem',
+                        fontSize: 'clamp(0.9rem, 2.5vw, 1.1rem)',
                         lineHeight: '1.7',
                         position: 'relative',
                     }}>

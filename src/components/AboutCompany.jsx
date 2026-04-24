@@ -31,7 +31,7 @@ const AboutCompany = () => {
                     viewport={{ once: true }}
                     style={{ textAlign: 'center', marginBottom: '4rem' }}
                 >
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--white)' }}>
+                    <h2 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.5rem)', marginBottom: '1rem', color: 'var(--white)' }}>
                         Sobre a <span style={{ color: 'var(--accent)' }}>FORTCAMP</span>
                     </h2>
                     <div style={{ width: '60px', height: '4px', background: 'var(--accent)', margin: '0 auto' }}></div>
@@ -39,7 +39,7 @@ const AboutCompany = () => {
 
                 <div style={{
                     display: 'flex',
-                    gap: '4rem',
+                    gap: 'clamp(2rem, 5vw, 4rem)',
                     alignItems: 'flex-start',
                     flexWrap: 'wrap',
                 }}>
@@ -49,10 +49,10 @@ const AboutCompany = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         viewport={{ once: true }}
-                        style={{ flex: '1 1 400px', minWidth: '300px' }}
+                        style={{ flex: '1 1 300px', minWidth: 'min(300px, 100%)' }}
                     >
                         <p style={{
-                            fontSize: '1.1rem',
+                            fontSize: 'clamp(0.95rem, 2.5vw, 1.1rem)',
                             color: 'var(--text-muted)',
                             lineHeight: '1.9',
                             marginBottom: '1.5rem',
@@ -62,7 +62,7 @@ const AboutCompany = () => {
                             nas necessidades reais de cada cliente.
                         </p>
                         <p style={{
-                            fontSize: '1.1rem',
+                            fontSize: 'clamp(0.95rem, 2.5vw, 1.1rem)',
                             color: 'var(--text-muted)',
                             lineHeight: '1.9',
                             marginBottom: '1.5rem',
@@ -78,8 +78,8 @@ const AboutCompany = () => {
                         transition={{ duration: 0.6, delay: 0.3 }}
                         viewport={{ once: true }}
                         style={{
-                            flex: '1 1 320px',
-                            minWidth: '280px',
+                            flex: '1 1 280px',
+                            minWidth: 'min(280px, 100%)',
                             display: 'flex',
                             flexDirection: 'column',
                             gap: '1.25rem',
