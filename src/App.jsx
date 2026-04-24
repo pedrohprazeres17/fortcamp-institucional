@@ -7,6 +7,7 @@ import Broker from './components/Broker';
 import CallToAction from './components/CallToAction';
 import Values from './components/Values';
 import Footer from './components/Footer';
+import WhatsAppFloat from './components/WhatsAppFloat';
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
             <div className="section-divider" />
             <Values />
             <Footer />
+            <WhatsAppFloat />
         </div>
     );
 }

@@ -31,6 +31,7 @@ const Navbar = () => {
     return (
         <nav style={{
             position: 'fixed',
+            top: 0,
             width: '100%',
             zIndex: 1000,
             transition: 'all 0.3s ease',

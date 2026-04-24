@@ -240,3 +240,66 @@ ul {
         height: 70px;
     }
 }
+
+/* ─── WhatsApp Float ─────────────────────────── */
+.wa-pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: rgba(37, 211, 102, 0.35);
+    animation: wa-pulse 2.8s ease-out infinite;
+    pointer-events: none;
+}
+
+@keyframes wa-pulse {
+    0%   { transform: translate(-50%, -50%) scale(1);   opacity: 0.6; }
+    100% { transform: translate(-50%, -50%) scale(2.2); opacity: 0;   }
+}
+
+/* ─── Service card CTA ───────────────────────── */
+.service-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--accent-warm);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    transition: gap 0.2s ease, color 0.2s ease;
+}
+
+.service-cta:hover {
+    gap: 0.7rem;
+    color: var(--accent-warm-hover);
+}
+
+/* ─── TopBar ─────────────────────────────────── */
+.topbar-wa-link {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #25D366;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    transition: opacity 0.2s;
+    font-family: var(--font-main);
+}
+
+.topbar-wa-link:hover {
+    opacity: 0.8;
+    color: #25D366;
+}
+
+@media (max-width: 600px) {
+    .topbar-tagline {
+        display: none;
+    }
+    .topbar-wa-link {
+        margin: 0 auto;
+    }
+}
