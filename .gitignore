@@ -7,3 +7,12 @@ _backup
 audios
 *.docx
 git_status.txt
+
+# Scripts de deploy com credenciais da VPS — NUNCA versionar
+deploy.mjs
+setup-ssl.mjs
+server/
+
+# Fontes brutas dos logos e site legado (não fazem parte do app React)
+SeguradorasParceiras/
+site/

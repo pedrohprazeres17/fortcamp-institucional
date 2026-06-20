@@ -19,8 +19,8 @@ const Contact = () => {
                         boxShadow: '0 10px 30px -10px rgba(2, 12, 27, 0.7)'
                     }}
                 >
-                    <h2 style={{ marginBottom: '1.5rem', fontSize: '2rem' }}>
-                        Conte com uma corretora que coloca sua <br />
+                    <h2 style={{ marginBottom: '1.5rem', fontSize: 'clamp(1.4rem, 3.5vw, 2rem)' }}>
+                        Conte com uma corretora que coloca sua{' '}
                         <span style={{ color: 'var(--accent)' }}>segurança em primeiro lugar.</span>
                     </h2>
                     <p style={{ color: 'var(--text-muted)', marginBottom: '2.5rem', maxWidth: '600px', margin: '0 auto 2.5rem' }}>

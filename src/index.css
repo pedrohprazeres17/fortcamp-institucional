@@ -248,6 +248,28 @@ ul {
     }
 }
 
+/* ─── Hero buttons em mobile ─────────────────────── */
+@media (max-width: 480px) {
+    .hero-buttons > a {
+        width: 100%;
+        max-width: 100% !important;
+        justify-content: center;
+    }
+}
+
+/* ─── Services: 2 colunas em tablet ─────────────── */
+@media (min-width: 560px) and (max-width: 839px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 840px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
 /* ─── Foto do corretor ───────────────────────────── */
 .broker-photo {
     width: 200px;
@@ -341,3 +363,24 @@ ul {
         margin: 0 auto;
     }
 }
+
+/* ─── Partners Carousel ──────────────────────────── */
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+}
+
+.partners-track {
+    display: flex;
+    width: max-content;
+    align-items: center;
+    animation: marquee 35s linear infinite;
+    will-change: transform;
+}
+
+/* Espaçamento simétrico por card (em vez de gap) para que
+   o translateX(-50%) feche a emenda do loop sem saltos. */
+.partner-logo-card {
+    margin: 0 2rem;
+}
+

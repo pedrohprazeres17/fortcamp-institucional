@@ -123,7 +123,7 @@ const Services = () => {
                     </p>
                 </motion.div>
 
-                <div style={{
+                <div className="services-grid" style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fill, minmax(min(280px, 100%), 1fr))',
                     gap: '1.5rem',

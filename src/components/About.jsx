@@ -13,7 +13,7 @@ const About = () => {
                     viewport={{ once: true }}
                     style={{ textAlign: 'center', marginBottom: '4rem' }}
                 >
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--white)' }}>
+                    <h2 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.5rem)', marginBottom: '1rem', color: 'var(--white)' }}>
                         Sobre a <span style={{ color: 'var(--accent)' }}>FORTCAMP</span>
                     </h2>
                     <div style={{ width: '60px', height: '4px', background: 'var(--accent)', margin: '0 auto' }}></div>
@@ -36,8 +36,8 @@ const About = () => {
                     {/* Foto */}
                     <div style={{ flex: '0 0 auto', display: 'flex', justifyContent: 'center', width: '100%', maxWidth: '320px', margin: '0 auto' }}>
                         <div style={{
-                            width: '280px',
-                            height: '280px',
+                            width: 'clamp(200px, 60vw, 280px)',
+                            height: 'clamp(200px, 60vw, 280px)',
                             borderRadius: '50%',
                             overflow: 'hidden',
                             border: '4px solid var(--accent)',

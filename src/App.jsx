@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AboutCompany from './components/AboutCompany';
 import Services from './components/Services';
+import PartnersCarousel from './components/PartnersCarousel';
 import Broker from './components/Broker';
 import CallToAction from './components/CallToAction';
 import Values from './components/Values';
@@ -18,6 +19,8 @@ function App() {
             <AboutCompany />
             <div className="section-divider" />
             <Services />
+            <div className="section-divider" />
+            <PartnersCarousel />
             <div className="section-divider" />
             <Broker />
             <div className="section-divider" />
